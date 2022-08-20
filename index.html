@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-emerald-500	text-center	text-5xl font-bold mt-8 pt-4">MONEY MASTER <span
+                class="text-stone-900	"><i class="fa-solid fa-landmark"></i></span></h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-2 gap-4 mt-8 pt-4 w-9/12	mx-auto">
+            <div><img src="/money-pic.jpg" alt=""></div>
+            <div class="w-9/12 mx-auto text-center	">
+                <!-- how many dollar your income-->
+                <div>
+                    <h1 class="text-3xl font-semibold py-4">Income</h1>
+                    <h3 class="text-xl">Income: <input class="bg-slate-200 w-9/12 " type="text" name=""
+                            id="income-field" placeholder="Please input your income amount"></h3>
+                </div>
+                <div>
+                    <!-- how many dollar your expenses -->
+                    <h1 class="text-3xl font-semibold py-4">Expenses</h1>
+                    <h3 class="text-xl">Food: <input class="bg-slate-200 w-9/12 " type="text" name="" id="food-field"
+                            placeholder="amount"></h3>
+                    <h3 class="text-xl py-4">Rent: <input class="bg-slate-200 w-9/12 " type="text" name=""
+                            id="rent-field" placeholder=" amount"></h3>
+                    <h3 class="text-xl">Others: <input class="bg-slate-200 w-9/12 " type="text" name=""
+                            id="others-field" placeholder=" amount"></h3>
+                </div>
+                <div>
+                    <!-- calculate the whole things and how many dollar you have -->
+                    <button class="bg-cyan-400 text-lg	font-semibold text-white m-4 px-12 py-4 rounded"
+                        id="calculate-btn">Calculate</button>
+                    <h3 class="text-xl py-4">Total Expenses: <span id="expenses-field">5000</span>
+                    </h3>
+                    <h3 class="text-xl py-4">Balance: <span id="balance-field">3000</span></h3>
+                </div>
+                <div>
+                    <!-- how many dollar you have to save  -->
+                    <h1 class="text-xl  ">Save: <input class="bg-slate-200 w-3/12 " type="text" name="" id="save-field">
+                        %
+                        <button id="save-btn"
+                            class="bg-cyan-400 text-lg	font-semibold text-white m-4 px-12 py-4 rounded">Save</button>
+                    </h1>
+                    <h1 class="text-xl  py-4">Saving Amount: <span id="saving-amount">2000</span></h1>
+                    <h1 class="text-xl  ">Remaining Balance: <span id="remaining-balance-field">2000</span></h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>
